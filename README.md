@@ -85,6 +85,8 @@
 ## Conclusiones finales: 
 ### Total instancias creadas:
 ![alt text](image-34.png)
+### Arquitectura implementada:
+![alt text](image-38.png)
 ### Pruebas en postman del servicio catalan:
 ![alt text](image-36.png)
 ### Pruebas en postman del servicio catalanaux:
@@ -109,5 +111,10 @@
 ### El video muestra como el proxy esta desplegado en ec2 en el puerto 8080 con su index.html
 ### Ademas hay 2 servicios de catalan, si uno no llega a funcionar el otro responde. Estos 2 servicios estan desplegados en EC2 con un backend en java 
 ####  https://pruebacorreoescuelaingeduco-my.sharepoint.com/:v:/g/personal/esteban_aguilera-c_mail_escuelaing_edu_co/IQDLaVktdUrDTb-H8eHCqcTXAe_EEY1-pnCkJ4JM3mdJCR8?e=pNHE2Z
+
+# Autor
+### Esteban Aguilera Contreras
+### Arquitecturas empresariales
+### Escuela Colombiana de Ingeniería Julio Garavito 
 
 
