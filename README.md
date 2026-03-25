@@ -31,6 +31,28 @@
 
 ### Creamos las dos instancias en aws 
 ![alt text](image-9.png)
-![alt text](image-10.png)
+![alt text](image-19.png)
+
+### Miramos el proyecto compilado de catalan y buscamos el target el .jar
+![alt text](image-12.png)
+
+### Nos conectamos a la instancia , en este caso sera la primera catalanPrincipal pero se repite el mismo proceso con la intancia catalanSecundary
+
+### Mediante sftp subimos el .jar compilado del target a la instancia 
+![alt text](image-13.png)
+
+### Ahora, nos conectamos con ssh e instalamos java. Para eso miramos la documentacion dada por el profesor y lo instalamos 
+![alt text](image-14.png)
+![alt text](image-15.png)
+
+### Corremos el jar que subimos anteriormente con sftp
+![alt text](image-16.png)
+
+### El servidor ya esta corriendo y la instancia tambien, pero falta permitir el puerto 8081 en las security inbounds ya que por ahi esta corriendo el jar
+![alt text](image-17.png)
 
 
+### Ahora probamos que el endpoint este funcionando en la instancia:
+![alt text](image-18.png)
+
+### Repetimos los mismos pasos pero para la instancia 2 (subir jar, compilar, habilitar puerto 8082)
