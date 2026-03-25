@@ -72,3 +72,9 @@
 ![alt text](image-24.png)
 
 ### Una vez funcionando, entonces repetimos el mismo proceso que hicimos con las otras dos instancias. Crear instancia, conectarse, subir el jar, instalar java, correr el jar, configurar security inbounds ( en este caso 8080 (proxy), 8081(catalan1), 8082(catalan2) ) y probar la url del ec2 para ver que todo funciona correctamente
+![alt text](image-26.png)
+![alt text](image-27.png)
+![alt text](image-28.png)
+![alt text](image-29.png)
+![alt text](image-30.png)
+
