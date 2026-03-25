@@ -112,6 +112,12 @@
 ### Ademas hay 2 servicios de catalan, si uno no llega a funcionar el otro responde. Estos 2 servicios estan desplegados en EC2 con un backend en java 
 ####  https://pruebacorreoescuelaingeduco-my.sharepoint.com/:v:/g/personal/esteban_aguilera-c_mail_escuelaing_edu_co/IQDLaVktdUrDTb-H8eHCqcTXAe_EEY1-pnCkJ4JM3mdJCR8?e=pNHE2Z
 
+
+# Documentacion
+### https://docs.oracle.com/javase/8/docs/api/
+### https://spring.io/guides/gs/rest-service
+### https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/amazon-linux-install.html
+### AWS Academy, AWS
 # Autor
 ### Esteban Aguilera Contreras
 ### Arquitecturas empresariales
