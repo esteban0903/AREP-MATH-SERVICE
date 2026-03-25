@@ -31,12 +31,12 @@
 
 ### Creamos las dos instancias en aws 
 ![alt text](image-9.png)
-![alt text](image-19.png)
+![alt text](image-31.png)
 
 ### Miramos el proyecto compilado de catalan y buscamos el target el .jar
 ![alt text](image-12.png)
 
-### Nos conectamos a la instancia , en este caso sera la primera catalanPrincipal pero se repite el mismo proceso con la intancia catalanSecundary
+### Nos conectamos a la instancia , en este caso sera la primera catalanPrincipal 
 
 ### Mediante sftp subimos el .jar compilado del target a la instancia 
 ![alt text](image-13.png)
@@ -67,14 +67,37 @@
 ### Configuramos el index html en base al dado por el profesor, cambiamos endpoints y valores de acuerdo a nuestro proxy Controller
 ![alt text](image-23.png)
 
-### Corremos el back y miramos que funcione y redirija a la instancia configurada 
-![alt text](image-25.png)
+### Corremos el back y miramos que funcione y redirija a la instancia configurada
+![alt text](image-32.png) 
 ![alt text](image-24.png)
 
-### Una vez funcionando, entonces repetimos el mismo proceso que hicimos con las otras dos instancias. Crear instancia, conectarse, subir el jar, instalar java, correr el jar, configurar security inbounds ( en este caso 8080 (proxy), 8081(catalan1), 8082(catalan2) ) y probar la url del ec2 para ver que todo funciona correctamente
+### Una vez funcionando, entonces repetimos el mismo proceso que hicimos con las otras dos instancias para la instancia del proxy .( Crear instancia, conectarse, subir el jar, instalar java, correr el jar, configurar security inbounds ( en este caso 8080 (proxy), 8081(catalan1), 8082(catalan2) ) y probar la url del ec2 para ver que todo funciona correctamente ) 
+![alt text](image-33.png)
 ![alt text](image-26.png)
 ![alt text](image-27.png)
 ![alt text](image-28.png)
 ![alt text](image-29.png)
 ![alt text](image-30.png)
+
+
+### Total instancias creadas:
+![alt text](image-34.png)
+
+### Todos los endpoints son GET
+### Endpoints locales catalan y catalanaux (examples):
+#### http://localhost:8081/catalan?value=10
+#### http://localhost:8082/catalan?value=10
+
+### Endpoints proxy (examples):
+#### http://localhost:8080/
+#### http://localhost:8080/proxy?value=10
+
+### Como correr los servicios?
+#### mvn spring-boot:run ( desde la raiz de cada proyecto)
+
+### Video de funcionamiento en vivo
+#### El video muestra como el proxy esta desplegado en ec2 en el puerto 8080 con su index.html
+#### Ademas hay 2 servicios de catalan, si uno no llega a funcionar el otro responde. Estos 2 servicios estan desplegados en EC2 con un backend en java 
+https://pruebacorreoescuelaingeduco-my.sharepoint.com/:v:/g/personal/esteban_aguilera-c_mail_escuelaing_edu_co/IQDLaVktdUrDTb-H8eHCqcTXAe_EEY1-pnCkJ4JM3mdJCR8?e=pNHE2Z
+
 
