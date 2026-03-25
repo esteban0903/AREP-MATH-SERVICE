@@ -1,5 +1,6 @@
 # AREP-MATH-SERVICE
-### Creamos el scaffolding basico con ayuda de spring initlzr
+## Scaffolding inicial
+### Creamos el scaffolding basico con ayuda de spring initializr
 ![alt text](image.png)
 
 ### Copiamos el codigo base de httpConnection y lo modificamos para que reciba una URL como parametro y ejecute la funcion
@@ -29,6 +30,7 @@
 ## Probamos algun servicio para ver que funcione bien con el caso de prueba del enunciado 
 ![alt text](image-11.png)
 
+## AWS instancias
 ### Creamos las dos instancias en aws 
 ![alt text](image-9.png)
 ![alt text](image-31.png)
@@ -61,6 +63,7 @@
 ![alt text](image-20.png)
 ![alt text](image-21.png)
 
+## Configuracion proxy y AWS
 ### Una vez las dos instancias funcionando y corriendo, ahora configuramos los links en el proxy controller 
 ![alt text](image-22.png)
 
@@ -103,8 +106,8 @@
 #### mvn spring-boot:run ( desde la raiz de cada proyecto)
 
 ## Video de funcionamiento en vivo
-#### El video muestra como el proxy esta desplegado en ec2 en el puerto 8080 con su index.html
-#### Ademas hay 2 servicios de catalan, si uno no llega a funcionar el otro responde. Estos 2 servicios estan desplegados en EC2 con un backend en java 
-https://pruebacorreoescuelaingeduco-my.sharepoint.com/:v:/g/personal/esteban_aguilera-c_mail_escuelaing_edu_co/IQDLaVktdUrDTb-H8eHCqcTXAe_EEY1-pnCkJ4JM3mdJCR8?e=pNHE2Z
+### El video muestra como el proxy esta desplegado en ec2 en el puerto 8080 con su index.html
+### Ademas hay 2 servicios de catalan, si uno no llega a funcionar el otro responde. Estos 2 servicios estan desplegados en EC2 con un backend en java 
+####  https://pruebacorreoescuelaingeduco-my.sharepoint.com/:v:/g/personal/esteban_aguilera-c_mail_escuelaing_edu_co/IQDLaVktdUrDTb-H8eHCqcTXAe_EEY1-pnCkJ4JM3mdJCR8?e=pNHE2Z
 
 
