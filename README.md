@@ -55,4 +55,20 @@
 ### Ahora probamos que el endpoint este funcionando en la instancia:
 ![alt text](image-18.png)
 
-### Repetimos los mismos pasos pero para la instancia 2 (subir jar, compilar, habilitar puerto 8082)
+### Repetimos los mismos pasos pero para la instancia 2 (subir jar, instalar java, compilar, habilitar puerto 8082)
+![alt text](image-10.png)
+![alt text](image-19.png)
+![alt text](image-20.png)
+![alt text](image-21.png)
+
+### Una vez las dos instancias funcionando y corriendo, ahora configuramos los links en el proxy controller 
+![alt text](image-22.png)
+
+### Configuramos el index html en base al dado por el profesor, cambiamos endpoints y valores de acuerdo a nuestro proxy Controller
+![alt text](image-23.png)
+
+### Corremos el back y miramos que funcione y redirija a la instancia configurada 
+![alt text](image-25.png)
+![alt text](image-24.png)
+
+### Una vez funcionando, entonces repetimos el mismo proceso que hicimos con las otras dos instancias. Crear instancia, conectarse, subir el jar, instalar java, correr el jar, configurar security inbounds ( en este caso 8080 (proxy), 8081(catalan1), 8082(catalan2) ) y probar la url del ec2 para ver que todo funciona correctamente
