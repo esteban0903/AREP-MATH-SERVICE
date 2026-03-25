@@ -12,8 +12,8 @@ public class ProxyController {
     @GetMapping("/proxy")
     public String proxy (@RequestParam("value") String value) throws IOException{
 
-        String principalUrl = "" + value;
-        String secondaryUrl = "" + value;
+        String principalUrl = "http://ec2-100-24-20-223.compute-1.amazonaws.com:8081/catalan?value=" + value;
+        String secondaryUrl = "http://ec2-54-175-168-53.compute-1.amazonaws.com:8082/catalan?value=" + value;
 
         try{
             return http.call(principalUrl);
